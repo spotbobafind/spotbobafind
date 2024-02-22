@@ -35,7 +35,7 @@ Once both are running you should be able to go to `http://127.0.0.1:5173/` in yo
 
 # Project Summary
 
-My approach to this project was to find as many pre-built components and libraries I could to speed development time and focus on getting an acceptable user experience. One of the primary focus area managing load on the YELP API through caching on the backend layer and attempted caching on the front-end. I also wanted to be able organize the data with as few clicks as possible. To me that meant avoiding dropdowns or submenus. I wanted a flat user experience with a focus on getting data quickly and manipulating it easily
+My approach to this project was to find as many pre-built components and libraries I could to speed development time and focus on getting an acceptable user experience. One of the primary focus area managing load on the YELP API through caching on the backend layer and attempted caching on the front-end. I also wanted to be able organize the data with as few clicks as possible. To me that meant avoiding dropdowns or submenus. I wanted a flat user experience with a focus on getting data quickly and manipulating it easily. I would say I speny the most time on data fetching from the front end, to make sure it was sending all the right querystrings and reflecting correct data in the UI.
 
 ## Caching and Config
 
