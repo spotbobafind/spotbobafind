@@ -1,0 +1,16 @@
+{
+    "locations":[
+        {
+            "label": "Los Gatos",
+            "address": "121 Albright Way, Los Gatos, CA 95032"
+        },
+        {
+            "label": "New York",
+            "address": "888 Broadway, New York, NY 10003"
+        },
+        {
+            "label": "Los Angeles",
+            "address": "5808 Sunset Blvd, Los Angeles, CA 90028"
+        }
+    ]
+}
