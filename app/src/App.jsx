@@ -14,23 +14,24 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Box sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        width: '100dvw',
-        position: 'fixed',
-      }}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Bobafind
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <LocationSelector locations={officeLocations} />
-        <ResultsList></ResultsList>
-      </Box>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'stretch',
+          width: '100dvw',
+          position: 'fixed',
+          height: "100vh",
+        }}>
+          <AppBar position="static">
+            <Toolbar>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                Bobafind
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <LocationSelector locations={officeLocations} />
+          <ResultsList></ResultsList>
+        </Box>
     </>
       
   )

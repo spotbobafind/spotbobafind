@@ -7,29 +7,26 @@ import { useSearchParams } from "react-router-dom";
 
 function LocationSelector({ locations }) {
   const [searchParams, setSearchParams] = useSearchParams();
-  const locationsQuery = searchParams.getAll("location");
-  const filterdLocations = locations.filter(l => {
-    if (locationsQuery && locationsQuery.length > 0){
-      return locationsQuery.includes(l.address);
-    } else {
-      return true
-    }
-  });
-
-  const [offices, setOffices] = useState(() => filterdLocations);
-  const handleLocation = (event, newOffices) => {
-    setSearchParams({ location: newOffices.map(o => o.address) });
-    setOffices(newOffices);
+  const locationsQuery = searchParams.get("location");
+  const validatedLocation = locations.find(l => l.id === locationsQuery) || locations[0];  
+  const [curLocation, setCurLocation] = useState(validatedLocation.id);
+  const handleLocation = (event, newLocation) => {
+    setSearchParams(oldParams => {
+      const params = new URLSearchParams(oldParams.toString());
+      params.set("location", newLocation);
+      return params;
+    });
+    setCurLocation(newLocation);
   };
 
   return (
   <ToggleButtonGroup
-    value={offices}
+    exclusive
+    value={curLocation}
     onChange={handleLocation}
-    aria-label="office location"
   >
       {locations.map((location, idx) => (
-      <ToggleButton key={idx} value={location}>
+      <ToggleButton key={idx} value={location.id}>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           {location.label}
         </Typography>

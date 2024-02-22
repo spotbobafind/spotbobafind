@@ -2,17 +2,17 @@
     "locations":[
         {
             "id": "1",
-            "label": "Netflix - Los Gatos",
+            "label": "Los Gatos",
             "address": "121 Albright Wy, Los Gatos, CA 95032"
         },
         {
             "id": "2",
-            "label": "Netflix - New York",
+            "label": "New York",
             "address": "888 Broadway, New York, NY 10003"
         },
         {
             "id": "3",
-            "label": "Netflix - Los Angeles",
+            "label": "Los Angeles",
             "address": "5808 Sunset Blvd, Los Angeles, CA 90028"
         }
     ]
