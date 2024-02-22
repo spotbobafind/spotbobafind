@@ -14,7 +14,7 @@ You will need to provide a YELP API key using a `YELPAPIKEY` environment variabl
 ```sh
 export YELPAPIKEY=[YOURKEYHERE]
 
-cd /server 
+cd server 
 
 npm install
 
@@ -24,7 +24,7 @@ npm run dev
 Frontend:
 
 ```sh
-cd /app 
+cd app 
 
 npm install
 
